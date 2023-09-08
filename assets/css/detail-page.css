@@ -1,0 +1,289 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.centered-container {
+   /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    justify-items: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.header-information {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-information p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.header-information input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    font-size: 20px;
+}
+
+.header-information a:visited {
+    color: rgb(234, 0, 39);
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 0, 39);
+    height: 60px;
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a {
+    padding-right: 30px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "title subarticle1"
+        "title subarticle2"
+        "article subarticle3"
+        "article categories"
+        "related categories";
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.title h2{
+    font-size: 25px;
+    padding-bottom: 19px;
+}
+
+.title p{
+    padding-bottom: 25px;
+}
+
+.article {
+    grid-area: article;
+}
+
+.article h3{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.article p{
+    margin-top: 15px;
+}
+
+.last-p{
+    padding-top: 30px;
+}
+
+.related {
+    grid-area: related;
+}
+
+.related-div-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.related-div{
+    display: grid;
+}
+
+
+
+.subarticle img {
+    height: 150px;
+    padding-top: 15px;
+}
+
+.subarticle-p{
+    width: 280px;
+}
+
+.subarticle1 {
+    grid-area: subarticle1;
+}
+
+.subarticle2 {
+    grid-area: subarticle2;
+}
+
+.subarticle3 {
+    grid-area: subarticle3;
+}
+
+.categories {
+    grid-area: categories;
+}
+
+.related-div p{
+    width: 200px;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 2px solid red;
+}
+
+.footer-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    grid-template-areas:
+        "upper right"
+        "under right";
+}
+
+
+.upper {
+    grid-area: upper;
+    margin-bottom: 10px;
+}
+
+.under {
+    grid-area: under;
+    /*Preguntar*/
+}
+
+.right {
+    grid-area: right;
+    align-self: center;
+    /*Preguntar*/
+    justify-self: end;
+}
+
+.flex-right-part {
+    display: flex;
+}
+
+footer img {
+    height: 15px;
+}
+
+footer .upper a {
+    padding-left: 6px;
+}
+
+footer .upper a:visited {
+    color: rgb(76, 75, 74);
+}
+
+footer .under {
+    font-size: 10.6px;
+}
+
+footer .under a {
+    padding-left: 6px;
+}
+
+footer .under a:visited {
+    color: rgb(76, 75, 74);
+}
+
+footer .right i {
+    font-size: 20px;
+    padding-left: 14px;
+}
+
+.input-container {
+    margin-left: 50px;
+    /*Preguntar como centrarlo*/
+}
+
+.input-container input {
+    width: 200px;
+    padding: 5px;
+}
+
+.input-container button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
